@@ -33,7 +33,7 @@ git clone git://git.ipxe.org/ipxe.git
 ## Compile
 ```
 cd ipxe/src
-make bin/undionly.kpxe EMBED=undionly.ipxe
+make bin/undionly.kpxe EMBED=boot.ipxe
 ```
 
 ## Upload
