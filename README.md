@@ -39,8 +39,11 @@ make bin/undionly.kpxe EMBED=boot.ipxe
 ## Upload
 Upload `undionly.kpxe` along with the other files to the TFTP server in boot/ folder. `boot.ipxe` is not required anymore as it's embedded into `undionly.kpxe` but for your convenience it's better to have it on the server.
 
-## Setup DHCP server
+## DHCP server setup
 You need to add `Next Server` to be your `TFTP IP Address`. You'll also need to set `Boot File Name` to be `boot/undionly.kpxe`.
+
+## TFTP server sertup
+You should add all the files to your TFTP server because this is a simpel protocol and you need to describe every file which will be served.
 
 # Notes
 File `undionly.ipxe` is loaded from IP Address assigned in your `Next Server`.
